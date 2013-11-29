@@ -2,5 +2,7 @@
 SUB_FOLDERS=`ls -d -- */`
 for SUB_FOLDER in $SUB_FOLDERS;
 do
-    ${SUB_FOLDER}install.sh
+    cd ${SUB_FOLDER}
+    ./install.sh
+    cd ..
 done
