@@ -1,3 +1,6 @@
+" Use patheogen to manage vim plugins
+call pathogen#infect() 
+
 set ruler
 set nocompatible
 syntax enable
@@ -24,9 +27,11 @@ set grepprg=grep\ -nH\ $*
 " Force term to use 256 color instead of 16 colors
 " Thus color schema look same in gvim or terminal
 set t_Co=256
+"let g:solarized_termcolors=256
 " Nice color from TextMate
-colorscheme molokai
-let g:molokai_original = 1
+"colorscheme molokai
+"let g:molokai_original = 1
+colorscheme solarized 
 "let g:rehash256 = 1
 set background=dark
 "transparent background
@@ -46,9 +51,6 @@ nnoremap <c-l>  :tabnext<CR>
 " Enable highligh for search text and press space to turn off highlighting
 set hlsearch
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>"
-
-" Use patheogen to manage vim plugins
-call pathogen#infect() 
 
 let g:NERDTreeWinSize = 45 
 map <F3> :NERDTree .<cr>
