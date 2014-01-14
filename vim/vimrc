@@ -27,11 +27,9 @@ set grepprg=grep\ -nH\ $*
 " Force term to use 256 color instead of 16 colors
 " Thus color schema look same in gvim or terminal
 set t_Co=256
-"let g:solarized_termcolors=256
 " Nice color from TextMate
-"colorscheme molokai
+colorscheme molokai
 "let g:molokai_original = 1
-colorscheme solarized 
 "let g:rehash256 = 1
 set background=dark
 "transparent background
