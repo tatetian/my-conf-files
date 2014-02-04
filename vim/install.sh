@@ -1,7 +1,4 @@
 #!/bin/bash
-rm -rf ~/.vim
-cp -r . ~/.vim
-rm -rf ~/.vim/.git
-
-cp vimrc ~/.vimrc
-cp gvimrc ~/.gvimrc
+cp vimrc.local ~/.vimrc.local
+cp vimrc.bundles.local ~/.vimrc.bundles.local
+cp -r plugin ~/.vim/
