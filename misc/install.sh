@@ -7,8 +7,6 @@ if [[ "$(uname)" = "Darwin" ]]; then
 fi
 #tmux source-file ~/.tmux.conf
 
-cp inputrc   ~/.inputrc
-
 # git
 git config --global user.name   "Tate, Hongliang Tian"
 git config --global user.email  "tatetian@gmail.com"
