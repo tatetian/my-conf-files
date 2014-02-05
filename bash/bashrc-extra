@@ -1,0 +1,11 @@
+alias ls="ls -G"
+alias cd..="cd .."
+alias cd....="cd ../.."
+alias l="ls -alp"
+alias h="history"
+alias grep="grep --color=auto"
+
+set -o vi
+
+source ~/.git-prompt.sh
+export PS1='┌─[\[\e[38;5;32m\]\w\[\e[0m\]\[\e[38;5;240m\]$(__git_ps1 " (%s)")\[\e[0m\]]\n└─╼ '
