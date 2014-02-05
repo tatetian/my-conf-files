@@ -17,6 +17,8 @@ nnoremap <F4> :TagbarToggle<CR>
 
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>"
 
+let g:airline_theme='molokai'
+
 " Smooth scroll
 noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 15, 2)<CR>
 noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 15, 2)<CR>
