@@ -31,9 +31,11 @@ noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 15, 2)<CR>
 
 " Buffer related keys
 noremap <silent> <c-m> :CtrlPMRU<CR>
-map <c-x> :bwipeout<CR>
-nmap <silent> <c-f> :LustyFilesystemExplorer<CR>
-nmap <silent> <c-b> :LustyJuggler<CR>
+noremap <c-x> :bdel<CR>
+noremap <c-f> :LustyFilesystemExplorer<CR>
+noremap <c-b> :LustyJuggler<CR>
+"noremap <c-l> :LustyJugglePrevious<CR>
+let g:LustyJugglerAltTabMode = 1
 
 " CtrlP
 let g:ctrlp_match_window_bottom=0
