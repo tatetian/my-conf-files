@@ -1,2 +1,3 @@
 Bundle 'tpope/vim-commentary'
 Bundle 'terryma/vim-smooth-scroll'
+Bundle 'sjbach/lusty'
