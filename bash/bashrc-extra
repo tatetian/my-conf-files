@@ -1,4 +1,13 @@
-alias ls="ls -G"
+# detect OS
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    ls_params='--color=auto'
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    ls_params='-G'
+else
+    ls_params=''
+fi
+
+alias ls="ls ${ls_params}"
 alias cd..="cd .."
 alias cd....="cd ../.."
 alias l="ls -alp"
