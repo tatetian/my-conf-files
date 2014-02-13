@@ -18,6 +18,16 @@ set nolist
 let g:NERDTreeWinSize=35
 let g:NERDTreeQuitOnOpen=0
 
+" Tab switching
+noremap <C-H> gT
+noremap <C-L> gt 
+
+" Window switching
+noremap <S-J> <C-W>j<C-W>_
+noremap <S-K> <C-W>k<C-W>_
+noremap <S-L> <C-W>l<C-W>_
+noremap <S-H> <C-W>h<C-W>_
+
 " Set F3-F6
 noremap <F3> :NERDTreeToggle .<CR>
 nnoremap <F4> :TagbarToggle<CR>
