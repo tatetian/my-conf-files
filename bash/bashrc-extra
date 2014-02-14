@@ -16,7 +16,7 @@ alias cd..="cd .."
 alias cd....="cd ../.."
 alias l="ls -alp"
 alias h="history"
-alias grep="grep --color=auto"
+alias grep="grep --color=auto -n"
 
 # disable Ctrl+S to prevent console from accidentally freezing
 bind -r '\C-s'
