@@ -12,3 +12,4 @@ git config --global user.name   "Tate, Hongliang Tian"
 git config --global user.email  "tatetian@gmail.com"
 git config --global core.editor "vim"
 git config --global credential.helper cache
+git config --global color.ui    auto
