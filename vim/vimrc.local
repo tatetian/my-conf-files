@@ -14,6 +14,11 @@ let g:indent_guides_enable_on_vim_startup = 0
 set nospell
 set nolist
 
+" Enable per-directory .vimrc
+" TODO: this approach is not safe enough
+set exrc
+set secure
+
 " Custom NERDTree
 let g:NERDTreeWinSize=35
 let g:NERDTreeQuitOnOpen=0
