@@ -9,7 +9,7 @@ set fileencodings=utf8,gbk
 " Fix tmux mouse support for vim split resizing
 set ttymouse=xterm2
 
-" Disable some features brought by spf13 spf13 spf13 
+" Disable some features brought by spf13
 let g:indent_guides_enable_on_vim_startup = 0
 set nospell
 set nolist
@@ -24,38 +24,47 @@ let g:NERDTreeWinSize=35
 let g:NERDTreeQuitOnOpen=0
 
 " Tab switching
-noremap <C-H> gT
-noremap <C-L> gt 
+noremap <S-H> gT
+noremap <S-L> gt 
 
 " Window switching
-noremap <S-J> <C-W>j<C-W>_
-noremap <S-K> <C-W>k<C-W>_
-noremap <S-L> <C-W>l<C-W>_
-noremap <S-H> <C-W>h<C-W>_
+noremap <C-J> <C-W>j<C-W>
+noremap <C-K> <C-W>k<C-W>
+noremap <C-L> <C-W>l<C-W>
+noremap <C-H> <C-W>h<C-W>
 
 " Set F3-F6
 noremap <F3> :NERDTreeToggle .<CR>
 nnoremap <F4> :TagbarToggle<CR>
+nmap <script> <silent> <F5> :call ToggleQuickfixList()<CR>
 set pastetoggle=<F6>
 
+" grep word under cursor
+" nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+" bind \ (backward slash) to grep shortcut
+" command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!"
+let g:agprg="ag -R --column"
+let g:aghighlight=1
+nnoremap \ :Ag<SPACE>
+
 " Smooth scroll
-noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 15, 2)<CR>
-noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 15, 2)<CR>
+noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 15, 2)<CR>
+noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 15, 2)<CR>
 " noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 10, 4)<CR>
 " noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 10, 4)<CR>
 
 " Buffer related keys
-noremap <silent> <c-m> :CtrlPMRU<CR>
-noremap <c-x> :bdel<CR>
-noremap <c-f> :LustyFilesystemExplorer<CR>
-noremap <c-b> :LustyJuggler<CR>
+" noremap <silent> <C-M> :CtrlPMRU<CR>
+noremap <C-X> :bdel<CR>
+noremap <C-F> :LustyFilesystemExplorer<CR>
+noremap <C-B> :LustyJuggler<CR>
 "noremap <c-l> :LustyJugglePrevious<CR>
 let g:LustyJugglerAltTabMode = 1
 
 " CtrlP
 let g:ctrlp_match_window_bottom=0
 let g:ctrlp_match_window_reversed=0
-""let g:ctrlp_custom_ignore='\v\~$|\.(o|swp|pyc)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
+"let g:ctrlp_custom_ignore='\v\~$|\.(o|swp|pyc)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_dotfiles=0
-let g:ctrlp_switch_buffer=0
+let g:ctrlp_switch_buffer='Et'
