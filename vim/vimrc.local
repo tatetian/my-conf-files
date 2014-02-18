@@ -25,7 +25,7 @@ let g:NERDTreeQuitOnOpen=0
 
 " Tab switching
 noremap <S-H> gT
-noremap <S-L> gt 
+noremap <S-L> gt
 
 " Window switching
 noremap <C-J> <C-W>j<C-W>
@@ -46,6 +46,11 @@ set pastetoggle=<F6>
 let g:agprg="ag -R --column"
 let g:aghighlight=1
 nnoremap \ :Ag<SPACE>
+
+" Disable whitespace detection
+" let g:airline#extensions#whitespace#enabled=0
+" Disable bufferline integeration
+let g:airline#extensions#bufferline#enabled=0
 
 " Smooth scroll
 noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 15, 2)<CR>
