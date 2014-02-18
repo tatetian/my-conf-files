@@ -51,6 +51,8 @@ nnoremap \ :Ag<SPACE>
 " let g:airline#extensions#whitespace#enabled=0
 " Disable bufferline integeration
 let g:airline#extensions#bufferline#enabled=0
+" Disable airline-tmuxline extension
+let g:airline#extensions#tmuxline#enabled=0
 
 " Smooth scroll
 noremap <silent> <C-U> :call smooth_scroll#up(&scroll, 15, 2)<CR>

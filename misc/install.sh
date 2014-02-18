@@ -1,6 +1,7 @@
 #!/bin/sh
 # tmux
 cp tmux.conf ~/.tmux.conf
+cp tmux.monokai.conf ~/.tmux.monokai.conf
 # Fix tmux to access MaxOSX clipboard
 if [[ "$(uname)" = "Darwin" ]]; then
     echo "\nset-option -g default-command \"reattach-to-user-namespace -l bash\"" >> ~/.tmux.conf
