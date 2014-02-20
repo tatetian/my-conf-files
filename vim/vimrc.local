@@ -48,7 +48,7 @@ let g:aghighlight=1
 nnoremap \ :Ag<SPACE>
 
 " Disable whitespace detection
-" let g:airline#extensions#whitespace#enabled=0
+let g:airline#extensions#whitespace#enabled=0
 " Disable bufferline integeration
 let g:airline#extensions#bufferline#enabled=0
 " Disable airline-tmuxline extension
