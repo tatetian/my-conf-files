@@ -1,5 +1,4 @@
 Bundle 'terryma/vim-smooth-scroll'
-Bundle 'sjbach/lusty'
 Bundle 'milkypostman/vim-togglelist'
 Bundle 'rking/ag.vim'
 Bundle 'edkolev/tmuxline.vim'
