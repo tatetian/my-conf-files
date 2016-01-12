@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#======= CScope ========
+find . -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.hpp" > cscope.files
+# build cscope database
+#   -q : reverse index
+#   -R : search for symbol recursively
+#   -b : build the database only with starting cscope browser
+cscope -q -R -b
+
+#======= ctags =========
+ctags -R *

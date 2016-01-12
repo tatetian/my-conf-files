@@ -4,5 +4,15 @@ cp vimrc.before ~/.vimrc.before
 cp vimrc.bundles.local ~/.vimrc.bundles.local
 cp -r plugin ~/.vim/
 
-# install modified molokai theme for vim-airline
+# Install modified molokai theme for vim-airline
 cp molokai.vim ~/.vim/bundle/vim-airline/autoload/airline/themes/molokai.vim
+
+# Install tools for C/C++ developement
+# The only interesting platforms are Ubuntu and Mac OS X
+if [[ "$(uname)" = "Linux" ]]; then
+    sudo apt-get install cscope ctags
+else
+    brew install cscope ctags
+fi
+
+sudo cp build_ctags /usr/local/bin/build_ctags
