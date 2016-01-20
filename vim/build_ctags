@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #======= CScope ========
-find . -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.hpp" > cscope.files
+find . -name "*.c" -o -name "*.cpp" -o -name "*.cc" -o -name "*.h" -o -name "*.hpp" -o -name "*.hh" > cscope.files
 # build cscope database
 #   -q : reverse index
 #   -R : search for symbol recursively
