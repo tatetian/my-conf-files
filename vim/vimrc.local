@@ -101,6 +101,7 @@ if has("cscope")
     set cscopeverbose  
 
 
+    " http://cscope.sourceforge.net/cscope_maps.vim
     """"""""""""" My cscope/vim key mappings
     "
     " The following maps all invoke one of the following cscope search types:
