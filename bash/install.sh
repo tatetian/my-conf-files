@@ -4,4 +4,4 @@ cp git-prompt.sh ~/.git-prompt.sh
 cp bashrc-extra ~/.bashrc-extra
 cp minttyrc ~/.minttyrc
 
-echo "source ~/.bashrc-extra" > ~/.bashrc
+echo "source ~/.bashrc-extra" >> ~/.bashrc
