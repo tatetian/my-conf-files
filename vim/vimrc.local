@@ -43,8 +43,8 @@ set pastetoggle=<F6>
 " nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 " bind \ (backward slash) to grep shortcut
 " command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!"
-let g:agprg="ag -R --column"
-let g:aghighlight=1
+let g:ag_prg="ag -R --column"
+let g:ag_highlight=1
 nnoremap \ :Ag<SPACE>
 
 " Disable whitespace detection
@@ -79,7 +79,8 @@ let g:ctrlp_switch_buffer='Et'
 " Wrap the lines of current paragraph (with Chinese support)
 set formatoptions+=wm
 set tw=79
-nnoremap Q gwap
+" nnoremap Q gwap
+nnoremap Q gq}
 
 " This tests to see if vim was configured with the '--enable-cscope' option
 " when it was compiled.  If it wasn't, time to recompile vim... 
