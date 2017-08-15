@@ -10,9 +10,9 @@ cp molokai.vim ~/.vim/bundle/vim-airline/autoload/airline/themes/molokai.vim
 # Install tools for C/C++ developement
 # The only interesting platforms are Ubuntu and Mac OS X
 if [[ "$(uname)" = "Linux" ]]; then
-    sudo apt-get install cscope ctags
+    sudo apt-get install cscope ctags silversearcher-ag
 else
-    brew install cscope ctags
+    brew install cscope ctags the_silver_searcher
 fi
 
 sudo cp build_ctags /usr/local/bin/build_ctags
