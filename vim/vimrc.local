@@ -36,8 +36,8 @@ noremap <C-H> <C-W>h<C-W>
 " Set F3-F6
 noremap <F3> :NERDTreeToggle .<CR>
 nnoremap <F4> :TagbarToggle<CR>
-nmap <script> <silent> <F5> :call ToggleQuickfixList()<CR>
-set pastetoggle=<F6>
+" nmap <script> <silent> <F5> :call ToggleQuickfixList()<CR>
+" set pastetoggle=<F6>
 
 " grep word under cursor
 " nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
@@ -61,12 +61,9 @@ noremap <silent> <C-D> :call smooth_scroll#down(&scroll, 15, 2)<CR>
 " noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 10, 4)<CR>
 
 " Buffer related keys
-" noremap <silent> <C-M> :CtrlPMRU<CR>
+noremap <silent> <C-M> :CtrlPMRU<CR>
+noremap <silent> <C-B> :CtrlPBuffer<CR>
 noremap <C-X> :bdel<CR>
-noremap <C-F> :LustyFilesystemExplorer<CR>
-noremap <C-B> :LustyJuggler<CR>
-"noremap <c-l> :LustyJugglePrevious<CR>
-let g:LustyJugglerAltTabMode = 1
 
 " CtrlP
 let g:ctrlp_match_window_bottom=0
