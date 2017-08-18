@@ -12,12 +12,15 @@ set ttymouse=xterm2
 " Disable some features brought by spf13
 let g:indent_guides_enable_on_vim_startup = 0
 set nospell
-set nolist
+set list
+
+" Always use system clipboard as the default register for copy and paste
+set clipboard=unnamedplus
 
 " Enable per-directory .vimrc
 " TODO: this approach is not safe enough
-set exrc
-set secure
+"set exrc
+"set secure
 
 " Custom NERDTree
 let g:NERDTreeWinSize=35
