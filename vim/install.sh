@@ -2,7 +2,7 @@
 cp vimrc.local ~/.vimrc.local
 cp vimrc.before.local ~/.vimrc.before.local
 cp vimrc.bundles.local ~/.vimrc.bundles.local
-cp -r plugin ~/.vim/
+#cp -r plugin ~/.vim/
 
 # Install modified molokai theme for vim-airline
 cp molokai.vim ~/.vim/bundle/vim-airline/autoload/airline/themes/molokai.vim

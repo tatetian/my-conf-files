@@ -9,6 +9,12 @@ set fileencodings=utf8,gbk
 " Fix tmux mouse support for vim split resizing
 set ttymouse=xterm2
 
+" Indent setting for C/C++ files
+filetype on
+filetype plugin on
+filetype indent on
+autocmd FileType h,c,cpp setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+
 " Disable some features brought by spf13
 let g:indent_guides_enable_on_vim_startup = 0
 set nospell
