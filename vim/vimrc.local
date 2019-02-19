@@ -5,6 +5,7 @@ set colorcolumn=80
 
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>"
 set fileencodings=utf8,gbk
+set encoding=utf-8
 
 " Fix tmux mouse support for vim split resizing
 set ttymouse=xterm2
